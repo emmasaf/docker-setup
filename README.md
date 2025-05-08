@@ -1,8 +1,4 @@
-Here’s a GitHub `README.md` description snippet you can use:
-
----
-
-## 🚀 Fullstack React + Node Test App (Vite + Express + Docker)
+# 🚀 Fullstack React + Node Test App (Vite + Express + Docker)
 
 This is a simple fullstack test application built with:
 
@@ -31,6 +27,3 @@ This is a simple fullstack test application built with:
 docker-compose up --build
 ```
 
----
-
-Let me know if you'd like to add sections like "Folder Structure", "API routes", or "Demo screenshot".
