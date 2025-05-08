@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  server-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: server-app
+    image: emulkin/fullstack-server:latest
+    container_name: server-app
+    ports:
+      - "3001:3001"
+    environment:
+      NODE_ENV: production
+      SERVER_PORT: 3001
+
+  client-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: client-app
+    image: emulkin/fullstack-client:latest
+    container_name: client-app
+    ports:
+      - "3000:3000"
+    environment:
+      NODE_ENV: production
+      CLIENT_PORT: 3000
